@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .menu-section {
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .order-form {
+            display: none;
+            margin-top: 20px;
+        }
+        .add-cart {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cart {
+            display: none;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Order Form</h1>
+    <button onclick="document.getElementById('order-form').style.display='block'">Start Order</button>
+    <div id="order-form" class="order-form">
+        <div class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-item">Spring Rolls <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Gobi Manchurian <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Hot and Sour Soup <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Manchow Soup <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Sweet Corn Soup <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Tomato Soup <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Schezwan Paneer <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Momos Manchurian <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Samosa <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Loaded Veggie Nachos <button class="add-cart">Add to Cart</button></div>
+
+        </div>
+        <div class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-item">Kimchi Fried Rice <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Black Pepper Tofu <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Roti Jala <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Veg Biryani <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Rose Rabokki <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Chole Samosa Chaat <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Chickpea Shawarma <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Creamy Spicy Miso Ramen <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Veg Kothu Parotta <button class="add-cart">Add to Cart</button></div>
+
+        </div>
+        <div class="menu-section">
+            <h2>Curries</h2>
+            <div class="menu-item">Egg Masala <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Paneer <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Malai Kofta <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Veg Thai Green Curry <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Veg Thai Red Curry <button class="add-cart">Add to Cart</button></div>
+            <div class="menu-item">Indonesian Veg Curry <button class="add-cart">Add to Cart</button></div>
+
+        </div>
+    </div>
+    
+    <div id="cart" class="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items"></ul>
+        <button onclick="submitOrder()">Submit Order</button>
+    </div>
+
+    <script>
+        let cart = [];
+        
+        document.querySelectorAll('.add-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                let itemName = this.parentElement.firstChild.textContent.trim();
+                cart.push(itemName);
+                updateCart();
+            });
+        });
+        
+        function updateCart() {
+            let cartDiv = document.getElementById("cart");
+            let cartItems = document.getElementById("cart-items");
+            cartItems.innerHTML = "";
+            
+            cart.forEach(item => {
+                let li = document.createElement("li");
+                li.textContent = item;
+                cartItems.appendChild(li);
+            });
+            
+            cartDiv.style.display = "block";
+        }
+        
+        function submitOrder() {
+            alert("Order Submitted Successfully!");
+            cart = [];
+            updateCart();
+            document.getElementById("cart").style.display = "none";
+        }
+    </script>
+</body>
+</html>

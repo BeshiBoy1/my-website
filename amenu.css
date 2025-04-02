@@ -1,0 +1,626 @@
+body {
+    background-color: azure;
+}
+
+
+.taskbar {
+    font-family: "Boldonse", system-ui;
+    color: green;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 40px;
+    margin-top: -50px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    background-color: red; 
+}
+
+.text {
+    color: white;
+}
+
+.leaf {
+    width: 5%;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 400;
+}
+
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 400;
+  }
+
+.footer {
+    display: flex;
+    background-color: red;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      justify-content: center;
+      font-size: 25px;
+}
+
+
+
+.list {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 35px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 400;
+    list-style-type: square;
+    width: 100px;
+    display: inline-block;
+}
+
+.rectangle {
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    background-color: green;
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+.container {
+    text-align: center;
+    width: 200px;
+    height: 260px; 
+    box-shadow: 0 0 10px 10px rgb(205, 205, 205);
+    margin: 20px;
+    padding: 5px;
+    display: inline-block; 
+    vertical-align: top;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 400;
+    font-size: 20px;
+}
+
+.picture {
+    width: 100%;
+    height: auto; 
+    margin-top: -30px; 
+    align-content: center;
+    vertical-align: top;
+}
+
+.price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    margin-top: -10px;
+}
+
+p .footer {
+    color: green;
+}
+
+#spring {
+    width: 100%;
+    height: auto; 
+    margin-top: -30px; 
+    align-content: center;
+    vertical-align: top;
+}
+
+#gobi {
+    width: 110%;
+    height: auto; 
+    margin-top: 0; 
+    align-content: center;
+    vertical-align: top;
+}
+
+#hot {
+    width: 110%;
+    height: auto; 
+    margin-top: -2px; 
+    margin-bottom: -5px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#manchow {
+    width: 160%;
+    height: auto; 
+    margin-top: -30px; 
+    margin-left: -40px;
+    margin-bottom: -19px;
+    align-content: top;
+    vertical-align: top;
+}
+
+#corn {
+    width: 120%;
+    height: auto; 
+    margin-top: -60px; 
+    margin-bottom: -35px;
+    margin-left: -15px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#tomato {
+    width: 110%;
+    height: auto; 
+    margin-top: -8px;
+    margin-left: -5px; 
+    align-content: center;
+    vertical-align: top;
+}
+
+#paneer {
+    width: 100%;
+    height: auto; 
+    margin-top: -5px; 
+    align-content: center;
+    vertical-align: top;
+}
+
+#dumplings {
+    width: 100%;
+    height: auto; 
+    margin-top: -30px; 
+    margin-bottom: -20px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#dosa {
+    width: 148%;
+    height: auto; 
+    margin-top: -22px; 
+    margin-left: -55px;
+    margin-bottom: 4px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#samosa {
+    width: 105%;
+    height: auto; 
+    margin-top: -40px; 
+    margin-bottom: -20px;
+    align-content: center;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nachos {
+    width: 100%;
+    height: auto; 
+    margin-top: -25px; 
+    align-content: center;
+    vertical-align: top;
+}
+
+#kimchi {
+    width: 140%;
+    height: auto; 
+    margin-top: 0px; 
+    margin-left: -25px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#tofu {
+    width: 150%;
+    height: auto; 
+    margin-top: -5px; 
+    margin-left: -30px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#jala {
+    width: 100%;
+    height: auto; 
+    margin-top: -25px; 
+    align-content: center;
+    vertical-align: top;
+}
+
+#biryani {
+    width: 115%;
+    height: auto; 
+    margin-top: -20px; 
+    margin-left: -10px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#rabokki {
+    width: 110%;
+    height: auto; 
+    margin-top: -19px; 
+    margin-bottom: -4px;
+    margin-left: -5px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#chaat {
+    width: 100%;
+    height: auto; 
+    margin-top: -40px; 
+    margin-bottom: -25px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#shawarma {
+    width: 95%;
+    height: auto; 
+    margin-top: -27px; 
+    align-content: center;
+    vertical-align: top;
+}
+
+#miso {
+    width: 110%;
+    height: auto; 
+    margin-top: -20px; 
+    margin-left: -5px;
+    margin-bottom: -5px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#parotta {
+    width: 115%;
+    height: auto; 
+    margin-top: -25px; 
+    margin-left: -9px;
+    margin-bottom: -2px;
+    align-content: center;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#egg {
+    width: 110%;
+    height: auto; 
+    margin-top: -21px; 
+    margin-left: -3px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#cpaneer {
+    width: 100%;
+    height: auto; 
+    margin-top: -10px; 
+    align-content: center;
+    vertical-align: top;
+}
+
+#malai {
+    width: 135%;
+    height: auto; 
+    margin-top: -10px; 
+    margin-left: -18px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#thaigreen {
+    width: 125%;
+    height: auto; 
+    margin-top: -30px; 
+    margin-left: -12px;
+    margin-bottom:-2px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#thaired {
+    width: 145%;
+    height: auto; 
+    margin-top: -17px; 
+    margin-left: -5px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#indo {
+    width: 155%;
+    height: auto; 
+    margin-top: -25px;
+    margin-left: -15px; 
+    margin-bottom: -4px;
+    align-content: center;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#chocmochi {
+    width: 170%;
+    height: auto; 
+    margin-left: -43px;
+    margin-top: -30px; 
+    margin-bottom: -35px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#matchamochi {
+    width: 160%;
+    height: auto; 
+    margin-left: -36px;
+    margin-top: -16px; 
+    margin-bottom: 13px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#cocmochi {
+    width: 170%;
+    height: auto; 
+    margin-left: -43px;
+    margin-top: -30px; 
+    margin-bottom: -35px;
+    align-content: center;
+    vertical-align: top; 
+}
+
+#mangomochi {
+    width: 170%;
+    height: auto; 
+    margin-left: -43px;
+    margin-top: -30px; 
+    margin-bottom: -35px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#chocoburfi {
+    width: 140%;
+    height: auto; 
+    margin-top: -39px;
+    margin-left: -20px; 
+    margin-bottom: -22px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#besanburfi {
+    width: 130%;
+    height: auto; 
+    margin-top: -30px; 
+    margin-left: -20px;
+    margin-bottom: -16px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#kajuburfi {
+    width: 210%;
+    height: auto; 
+    margin-top: -40px; 
+    margin-left: -65px;
+    margin-bottom: -20px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#pistaburfi {
+    width: 115%;
+    height: auto; 
+    margin-top: -20px; 
+    margin-left: -10px;
+    margin-bottom: -10px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#apricot {
+    width: 140%;
+    height: auto; 
+    margin-top: -110px; 
+    margin-left: -18px;
+    margin-bottom: -10px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#donut {
+    width: 145%;
+    height: auto; 
+    margin-top: -25px;
+    margin-bottom: 2px; 
+    margin-left: -19px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#rasmalai {
+    width: 100%;
+    height: auto; 
+    margin-top: -15px; 
+    align-content: center;
+    vertical-align: top;
+}
+
+#gulab {
+    width: 120%;
+    height: auto; 
+    margin-top: -55px; 
+    margin-left: -25px;
+    margin-bottom: -19px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#mysore {
+    width: 150%;
+    height: auto; 
+    margin-top: -20px; 
+    margin-left: -28px;
+    margin-bottom: -8px;
+    align-content: center;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mangolassi {
+    width: 160%;
+    height: auto; 
+    margin-top: -30px;
+    margin-right: -110px; 
+    margin-bottom: -10px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#lassi {
+    width: 155%;
+    height: auto; 
+    margin-top: -34px; 
+    margin-left: -17px;
+    margin-bottom: -15px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#taro {
+    width: 100%;
+    height: auto; 
+    margin-top: -18px; 
+    align-content: center;
+    vertical-align: top;
+}
+
+#brown {
+    width: 95%;
+    height: auto; 
+    margin-top: -50px; 
+    margin-left: -45px;
+    margin-bottom: -15px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#passion {
+    width: 160%;
+    height: auto; 
+    margin-top: -30px; 
+    margin-left: -40px;
+    margin-bottom: -7px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#chai {
+    width: 190%;
+    height: auto; 
+    margin-top: -30px; 
+    margin-left: -63px;
+    margin-bottom: -15px;
+    align-content: center;
+    vertical-align: top;
+}
+
+#thaiiced {
+    width: 200%;
+    height: auto; 
+    margin-top: -50px; 
+    margin-left: -87px;
+    align-content: center;
+    vertical-align: top;
+}
+
+figcaption {
+    margin-top: 10px; 
+    font-weight: bold;
+}

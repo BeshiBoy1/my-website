@@ -1,0 +1,508 @@
+
+body {
+  background-color: azure;
+  margin: 0;
+  padding: 0;
+  max-width: 235vh;
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 235dvh;
+}
+
+
+.title, #best, #staff, #sustainable, #source {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.knewave-regular {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.winky-sans {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.text {
+  color: black;
+}
+
+
+.leaf {
+  width: 5%;
+  max-width: 50px; 
+}
+
+.taskbar {
+  font-family: "Boldonse", system-ui;
+  color: green;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  padding-top: 40px;
+  margin-top: -50px;
+  margin-left: -20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  background-color: white; 
+}
+
+
+.title {
+  background-color: red;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 100dvh; 
+  width: 2000dvh;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+#best {
+  height: 80dvh; 
+  width: 2000dvh;
+  margin-top: 0px;
+  background-color: white;
+}
+
+#staff {
+  width: 2000dvh;
+  background: url("kitchen.jpg") center/cover no-repeat;
+  background-blend-mode: darken; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  height: 80dvh; 
+  width: auto;
+  overflow: hidden;
+}
+
+#sustainable {
+  height: 80dvh; 
+  width: 2000dvh;
+  background: url("trees.jpg") center/cover no-repeat;
+  background-blend-mode: darken; 
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+#source {
+  height: 80dvh; 
+  width: 2000dvh;
+  background-color: green;
+}
+
+
+#btitle {
+  font-size: 10rem;
+  margin: 5rem auto auto 18rem;
+  padding: 2rem;
+  opacity: 0; 
+  animation: fadeInUp 1s ease-out forwards;
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 255, 0);
+  z-index: 3;
+}
+
+
+
+
+#ramenb {
+  z-index: 9;
+  position: absolute;
+  margin-left: -110rem;
+  width: 100rem;
+  height: auto;
+  overflow: hidden;
+}
+
+#biryanib {
+  z-index: 9;
+  position: absolute;
+  margin-right: -90rem;
+  margin-bottom: -50rem;
+  width: 100rem;
+  height: auto;
+  overflow: hidden;
+}
+
+#noodlesb {
+  z-index: 9;
+  position: absolute;
+  margin-right: -90rem;
+  margin-top: -60rem;
+  width: 70rem;
+  height: auto;
+  overflow: hidden;
+}
+
+
+
+
+
+#bestt {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 18px;
+  color: black;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: -14rem;
+  padding-top: 0rem;
+  z-index: 7;
+  margin-right: 37rem;
+
+}
+
+#goal {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 18px;
+  color: black;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 5rem;
+  padding-top: 0rem;
+  z-index: 5;
+  margin-right: 37rem;
+}
+
+#motto {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  color: orange;
+  word-spacing: 10%;
+  line-height: 0.1;
+  margin-top: 0;
+  margin-left: 5rem;
+}
+
+#best3 {
+  width: 30%;
+  height: auto; 
+  z-index: 9;
+  border-radius: 3rem;
+  margin-left: 52rem;
+  margin-top: -6rem;
+}
+
+
+
+
+
+.traits {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  color: orange;
+  word-spacing: 10%;
+  line-height: 0.3;
+  margin-top: 3rem;
+  margin-left: 47rem;
+}
+
+#wstaff {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 24px;
+  color: white;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 5rem;
+  padding-top: 0rem;
+  z-index: 5;
+  margin-left: 50rem;
+  margin-right: 3rem;
+
+}
+
+#dishwasher {
+  width: 12rem;
+  height: auto;
+  z-index: 20;
+  margin-top: -5rem;
+  margin-left: 5rem;
+}
+
+#chef {
+  width: 12rem;
+  height: auto;
+  z-index: 21;
+  margin-top: -25rem;
+  margin-left: 5rem;
+}
+
+#waiter {
+  width: 12rem;
+  height: auto;
+  z-index: 22;
+  margin-top: -5rem;
+  margin-left: 22rem;
+}
+
+
+
+#sust {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 24px;
+  color: white;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 3rem;
+  padding-top: 0rem;
+  z-index: 7;
+  margin-right: 40rem;
+  margin-left: 5rem;
+}
+
+#motto1 {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  color: orange;
+  word-spacing: 10%;
+  line-height: 0.3;
+  margin-top: 4rem;
+  margin-left: 5rem;
+}
+
+#s1 {
+  z-index: 5;
+  width: 20%;
+  height: auto;
+  margin-top: -25rem;
+  margin-left: 62rem;
+}
+
+#s2 {
+  z-index: 5;
+  width: 25%;
+  height: auto;
+  margin-top: 0rem;
+  margin-left: 60rem;
+}
+
+
+
+#sourcet {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 22px;
+  color: white;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 0rem;
+  padding-top: 0rem;
+  z-index: 7;
+  margin-right: 26rem;
+  margin-left: 26rem;
+  text-align: center;
+}
+
+
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#motto2 {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  color: orange;
+  word-spacing: 10%;
+  line-height: 0.3;
+  margin-top: 3rem;
+  margin-right: 52rem;
+  margin-left: 35rem;
+}
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+#ramenb, #biryanib, #noodlesb {
+  opacity: 0;
+  position: absolute;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+#ramenb {
+  animation-name: slideInLeft;
+}
+
+#biryanib {
+  animation-name: slideInRight;
+}
+
+#noodlesb {
+  animation-name: slideUp;
+}
+
+#bestt, #goal, #wstaff, #sust, #sourcet {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+  animation-delay: 0.5s;
+}
+
+
+.text {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.text:hover {
+  color: orange;
+}
+
+
+#chefs, #s1, #s2 {
+  transition: transform 0.5s ease-in-out;
+}
+
+#chefs:hover, #s1:hover, #s2:hover {
+  transform: scale(1.1);
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.footer {
+  display: flex;
+  background-color: red;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    justify-content: center;
+    font-size: 25px;
+}
