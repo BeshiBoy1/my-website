@@ -8,6 +8,11 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: #f4f1e1; /* Soft beige background */
+            color: #333;
+        }
+        h1 {
+            color: #D85C5C; /* Deep red for the header */
         }
         .menu-section {
             margin: 20px auto;
@@ -15,13 +20,25 @@
             text-align: left;
         }
         .menu-item {
-            border: 1px solid #ddd;
+            border: 1px solid #f1c232; /* Golden border */
             border-radius: 10px;
             padding: 10px;
             margin: 10px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: #fff6e5; /* Light yellow background */
+        }
+        .menu-item button {
+            background-color: #f7b731; /* Orange button */
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu-item button:hover {
+            background-color: #d9811e; /* Darker orange on hover */
         }
         .order-form {
             display: block;
@@ -29,12 +46,27 @@
         }
         .cart {
             margin-top: 20px;
-            border: 1px solid #ddd;
+            border: 1px solid #f1c232;
             padding: 10px;
             border-radius: 10px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            background-color: #fff6e5;
+        }
+        .cart h2 {
+            color: #D85C5C; /* Red title for the cart */
+        }
+        .cart button {
+            background-color: #f7b731;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cart button:hover {
+            background-color: #d9811e;
         }
     </style>
 </head>
@@ -136,5 +168,3 @@
 </script>
 </body>
 </html>
-
-
