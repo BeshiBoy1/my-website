@@ -570,3 +570,19 @@ body {
     justify-content: center;
     font-size: 25px;
 }
+
+#milk {
+  width: 40%;
+  height: auto;
+  margin-top: -25rem;
+  z-index: 31;
+}
+
+
+#orangep {
+  width: 20%;
+  height: auto;
+  margin-left: 67rem;
+  margin-top: -21rem;
+  z-index: 40;
+}
