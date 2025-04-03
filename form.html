@@ -48,108 +48,104 @@
     </style>
 </head>
 <body>
+<h1>Restaurant Order Form</h1>
+<button onclick="document.getElementById('order-form').style.display='block'">Start Order</button>
+
 <div id="order-form" class="order-form">
-        <div class="menu-section">
-            <h2>Appetizers</h2>
-            <div class="menu-item">Spring Rolls <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Gobi Manchurian <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Hot and Sour Soup <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Manchow Soup <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Sweet Corn Soup <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Tomato Soup <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Schezwan Paneer <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Momos Manchurian <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Samosa <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Loaded Veggie Nachos <button class="add-cart">Add to Cart</button></div>
-        </div>
-
-        <div class="menu-section">
-            <h2>Main Courses</h2>
-            <div class="menu-item">Kimchi Fried Rice <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Black Pepper Tofu <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Roti Jala <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Veg Biryani <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Rose Rabokki <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Chole Samosa Chaat <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Chickpea Shawarma <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Creamy Spicy Miso Ramen <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Veg Kothu Parotta <button class="add-cart">Add to Cart</button></div>
-        </div>
-
-        <div class="menu-section">
-            <h2>Curries</h2>
-            <div class="menu-item">Egg Masala <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Paneer <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Malai Kofta <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Veg Thai Green Curry <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Veg Thai Red Curry <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Indonesian Veg Curry <button class="add-cart">Add to Cart</button></div>
-        </div>
-
-        <div class="menu-section">
-            <h2>Desserts</h2>
-            <div class="menu-item">Chocolate Ice Cream <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Strawberry Ice Cream <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Mango Ice Cream <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Vanilla Ice Cream <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Chocolate Mochi <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Matcha Mochi <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Coconut Mochi <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Mango Mochi <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Chocolate Burfi <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Besan Burfi <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Kaju Burfi <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Pistachio Burfi <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Apricot <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Korean Donuts <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Rasmalai <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Gulab Jamun <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Mysore Pak <button class="add-cart">Add to Cart</button></div>
-        </div>
-
-        <div class="menu-section">
-            <h2>Drinks</h2>
-            <div class="menu-item">Mango Lassi <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Plain Lassi <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Taro Boba <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Brown Sugar Boba <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Passionfruit Boba <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Chai Masala <button class="add-cart">Add to Cart</button></div>
-            <div class="menu-item">Thai Iced Tea <button class="add-cart">Add to Cart</button></div>
-        </div>
+    <div class="menu-section">
+        <h2>Appetizers</h2>
+        <div class="menu-item">Spring Rolls - $5.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Gobi Manchurian - $7.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Hot and Sour Soup - $4.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Manchow Soup - $4.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Sweet Corn Soup - $4.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Tomato Soup - $3.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Schezwan Paneer - $8.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Momos Manchurian - $6.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Spring Dosa - $7.49 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Samosa - $2.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Loaded Veggie Nachos - $9.99 <button class="add-cart">Add to Cart</button></div>
     </div>
 
-    <script>
-        let cart = [];
+    <div class="menu-section">
+        <h2>Main Courses</h2>
+        <div class="menu-item">Kimchi Fried Rice - $10.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Black Pepper Tofu - $11.49 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Roti Jala - $9.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Veg Biryani - $10.49 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Rose Rabokki - $12.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Chole Samosa Chaat - $8.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Chickpea Shawarma - $9.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Creamy Spicy Miso Ramen - $11.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Veg Kothu Parotta - $10.99 <button class="add-cart">Add to Cart</button></div>
+    </div>
+</div>
+
+<div id="cart" class="cart">
+    <h2>Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: $<span id="total-price">0.00</span></h3>
+    <button onclick="submitOrder()">Submit Order</button>
+</div>
+
+<script>
+    let cart = [];
+    let totalPrice = 0;
+    const priceList = {
+        "Spring Rolls": 5.99,
+        "Gobi Manchurian": 7.99,
+        "Hot and Sour Soup": 4.99,
+        "Manchow Soup": 4.99,
+        "Sweet Corn Soup": 4.99,
+        "Tomato Soup": 3.99,
+        "Schezwan Paneer": 8.99,
+        "Momos Manchurian": 6.99,
+        "Spring Dosa": 7.49,
+        "Samosa": 2.99,
+        "Loaded Veggie Nachos": 9.99,
+        "Kimchi Fried Rice": 10.99,
+        "Black Pepper Tofu": 11.49,
+        "Roti Jala": 9.99,
+        "Veg Biryani": 10.49,
+        "Rose Rabokki": 12.99,
+        "Chole Samosa Chaat": 8.99,
+        "Chickpea Shawarma": 9.99,
+        "Creamy Spicy Miso Ramen": 11.99,
+        "Veg Kothu Parotta": 10.99
+    };
+    
+    document.querySelectorAll('.add-cart').forEach(button => {
+        button.addEventListener('click', function() {
+            let itemName = this.parentElement.textContent.split('-')[0].trim();
+            cart.push(itemName);
+            totalPrice += priceList[itemName];
+            updateCart();
+        });
+    });
+    
+    function updateCart() {
+        let cartDiv = document.getElementById("cart");
+        let cartItems = document.getElementById("cart-items");
+        cartItems.innerHTML = "";
         
-        document.querySelectorAll('.add-cart').forEach(button => {
-            button.addEventListener('click', function() {
-                let itemName = this.parentElement.firstChild.textContent.trim();
-                cart.push(itemName);
-                updateCart();
-            });
+        cart.forEach(item => {
+            let li = document.createElement("li");
+            li.textContent = `${item} - $${priceList[item].toFixed(2)}`;
+            cartItems.appendChild(li);
         });
         
-        function updateCart() {
-            let cartDiv = document.getElementById("cart");
-            let cartItems = document.getElementById("cart-items");
-            cartItems.innerHTML = "";
-            
-            cart.forEach(item => {
-                let li = document.createElement("li");
-                li.textContent = item;
-                cartItems.appendChild(li);
-            });
-            
-            cartDiv.style.display = "block";
-        }
-        
-        function submitOrder() {
-            alert("Order Submitted Successfully!");
-            cart = [];
-            updateCart();
-            document.getElementById("cart").style.display = "none";
-        }
-    </script>
+        document.getElementById("total-price").textContent = totalPrice.toFixed(2);
+        cartDiv.style.display = "block";
+    }
+    
+    function submitOrder() {
+        alert("Order Submitted Successfully!");
+        cart = [];
+        totalPrice = 0;
+        updateCart();
+        document.getElementById("cart").style.display = "none";
+    }
+</script>
 </body>
 </html>
+
