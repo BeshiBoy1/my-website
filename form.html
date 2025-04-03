@@ -24,19 +24,10 @@
             align-items: center;
         }
         .order-form {
-            display: none;
+            display: block;
             margin-top: 20px;
         }
-        .add-cart {
-            background-color: green;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
         .cart {
-            display: none;
             margin-top: 20px;
             border: 1px solid #ddd;
             padding: 10px;
@@ -49,103 +40,101 @@
 </head>
 <body>
 <h1>Restaurant Order Form</h1>
-<button onclick="document.getElementById('order-form').style.display='block'">Start Order</button>
-
 <div id="order-form" class="order-form">
     <div class="menu-section">
         <h2>Appetizers</h2>
-        <div class="menu-item">Spring Rolls - $5.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Gobi Manchurian - $7.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Hot and Sour Soup - $4.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Manchow Soup - $4.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Sweet Corn Soup - $4.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Tomato Soup - $3.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Schezwan Paneer - $8.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Momos Manchurian - $6.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Spring Dosa - $7.49 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Samosa - $2.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Loaded Veggie Nachos - $9.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Spring Rolls - $5.99 <button class="add-cart" data-price="5.99">Add to Cart</button></div>
+        <div class="menu-item">Gobi Manchurian - $6.99 <button class="add-cart" data-price="6.99">Add to Cart</button></div>
+        <div class="menu-item">Hot and Sour Soup - $4.99 <button class="add-cart" data-price="4.99">Add to Cart</button></div>
+        <div class="menu-item">Manchow Soup - $5.49 <button class="add-cart" data-price="5.49">Add to Cart</button></div>
+        <div class="menu-item">Sweet Corn Soup - $5.99 <button class="add-cart" data-price="5.99">Add to Cart</button></div>
+        <div class="menu-item">Tomato Soup - $4.99 <button class="add-cart" data-price="4.99">Add to Cart</button></div>
+        <div class="menu-item">Schezwan Paneer - $7.49 <button class="add-cart" data-price="7.49">Add to Cart</button></div>
+        <div class="menu-item">Momos Manchurian (Indian Dumplings) - $6.99 <button class="add-cart" data-price="6.99">Add to Cart</button></div>
+        <div class="menu-item">Spring Dosa - $5.99 <button class="add-cart" data-price="5.99">Add to Cart</button></div>
+        <div class="menu-item">Samosa - $4.99 <button class="add-cart" data-price="4.99">Add to Cart</button></div>
+        <div class="menu-item">Loaded Veggie Nachos - $7.49 <button class="add-cart" data-price="7.49">Add to Cart</button></div>
     </div>
-
     <div class="menu-section">
         <h2>Main Courses</h2>
-        <div class="menu-item">Kimchi Fried Rice - $10.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Black Pepper Tofu - $11.49 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Roti Jala - $9.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Veg Biryani - $10.49 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Rose Rabokki - $12.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Chole Samosa Chaat - $8.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Chickpea Shawarma - $9.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Creamy Spicy Miso Ramen - $11.99 <button class="add-cart">Add to Cart</button></div>
-        <div class="menu-item">Veg Kothu Parotta - $10.99 <button class="add-cart">Add to Cart</button></div>
+        <div class="menu-item">Kimchi Fried Rice - $9.99 <button class="add-cart" data-price="9.99">Add to Cart</button></div>
+        <div class="menu-item">Black Pepper Tofu - $10.99 <button class="add-cart" data-price="10.99">Add to Cart</button></div>
+        <div class="menu-item">Roti Jala - $8.49 <button class="add-cart" data-price="8.49">Add to Cart</button></div>
+        <div class="menu-item">Veg Biryani - $11.99 <button class="add-cart" data-price="11.99">Add to Cart</button></div>
+        <div class="menu-item">Rose Rabokki - $12.99 <button class="add-cart" data-price="12.99">Add to Cart</button></div>
+        <div class="menu-item">Chole Samosa Chaat - $8.99 <button class="add-cart" data-price="8.99">Add to Cart</button></div>
+        <div class="menu-item">Chickpea Shawarma - $10.49 <button class="add-cart" data-price="10.49">Add to Cart</button></div>
+        <div class="menu-item">Creamy Spicy Miso Ramen - $13.99 <button class="add-cart" data-price="13.99">Add to Cart</button></div>
+        <div class="menu-item">Veg Kothu Parotta - $11.49 <button class="add-cart" data-price="11.49">Add to Cart</button></div>
+    </div>
+    <div class="menu-section">
+        <h2>Curries</h2>
+        <div class="menu-item">Egg Masala Curry - $9.99 <button class="add-cart" data-price="9.99">Add to Cart</button></div>
+        <div class="menu-item">Paneer Curry - $10.99 <button class="add-cart" data-price="10.99">Add to Cart</button></div>
+        <div class="menu-item">Malai Kofta - $11.99 <button class="add-cart" data-price="11.99">Add to Cart</button></div>
+        <div class="menu-item">Veg Thai Green Curry - $12.49 <button class="add-cart" data-price="12.49">Add to Cart</button></div>
+        <div class="menu-item">Veg Thai Red Curry - $12.49 <button class="add-cart" data-price="12.49">Add to Cart</button></div>
+        <div class="menu-item">Indonesian Veg Curry - $13.49 <button class="add-cart" data-price="13.49">Add to Cart</button></div>
+    </div>
+    <div class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-item">Ice Cream (Various Flavors) - $3.99 <button class="add-cart" data-price="3.99">Add to Cart</button></div>
+        <div class="menu-item">Mochi (Different Types) - $4.99 <button class="add-cart" data-price="4.99">Add to Cart</button></div>
+        <div class="menu-item">Apricot Custard - $5.99 <button class="add-cart" data-price="5.99">Add to Cart</button></div>
+        <div class="menu-item">Korean Donuts - $6.49 <button class="add-cart" data-price="6.49">Add to Cart</button></div>
+        <div class="menu-item">Burfi (Various) - $5.49 <button class="add-cart" data-price="5.49">Add to Cart</button></div>
+        <div class="menu-item">Rasmalai - $7.99 <button class="add-cart" data-price="7.99">Add to Cart</button></div>
+        <div class="menu-item">Gulab Jamun - $4.49 <button class="add-cart" data-price="4.49">Add to Cart</button></div>
+        <div class="menu-item">Mysore Pak - $5.49 <button class="add-cart" data-price="5.49">Add to Cart</button></div>
+    </div>
+    <div class="menu-section">
+        <h2>Drinks</h2>
+        <div class="menu-item">Lassi (Different Types) - $4.99 <button class="add-cart" data-price="4.99">Add to Cart</button></div>
+        <div class="menu-item">Boba Tea (Different Types) - $5.49 <button class="add-cart" data-price="5.49">Add to Cart</button></div>
+        <div class="menu-item">Chai Masala - $3.99 <button class="add-cart" data-price="3.99">Add to Cart</button></div>
+        <div class="menu-item">Thai Iced Tea - $3.99 <button class="add-cart" data-price="3.99">Add to Cart</button></div>
+        <div class="menu-item">Falooda (Various) - $6.49 <button class="add-cart" data-price="6.49">Add to Cart</button></div>
     </div>
 </div>
-
 <div id="cart" class="cart">
     <h2>Cart</h2>
     <ul id="cart-items"></ul>
     <h3>Total: $<span id="total-price">0.00</span></h3>
     <button onclick="submitOrder()">Submit Order</button>
 </div>
-
 <script>
     let cart = [];
     let totalPrice = 0;
-    const priceList = {
-        "Spring Rolls": 5.99,
-        "Gobi Manchurian": 7.99,
-        "Hot and Sour Soup": 4.99,
-        "Manchow Soup": 4.99,
-        "Sweet Corn Soup": 4.99,
-        "Tomato Soup": 3.99,
-        "Schezwan Paneer": 8.99,
-        "Momos Manchurian": 6.99,
-        "Spring Dosa": 7.49,
-        "Samosa": 2.99,
-        "Loaded Veggie Nachos": 9.99,
-        "Kimchi Fried Rice": 10.99,
-        "Black Pepper Tofu": 11.49,
-        "Roti Jala": 9.99,
-        "Veg Biryani": 10.49,
-        "Rose Rabokki": 12.99,
-        "Chole Samosa Chaat": 8.99,
-        "Chickpea Shawarma": 9.99,
-        "Creamy Spicy Miso Ramen": 11.99,
-        "Veg Kothu Parotta": 10.99
-    };
-    
+
     document.querySelectorAll('.add-cart').forEach(button => {
         button.addEventListener('click', function() {
             let itemName = this.parentElement.textContent.split('-')[0].trim();
-            cart.push(itemName);
-            totalPrice += priceList[itemName];
+            let itemPrice = parseFloat(this.getAttribute('data-price'));
+            cart.push({ name: itemName, price: itemPrice });
+            totalPrice += itemPrice;
             updateCart();
         });
     });
-    
+
     function updateCart() {
-        let cartDiv = document.getElementById("cart");
         let cartItems = document.getElementById("cart-items");
         cartItems.innerHTML = "";
-        
         cart.forEach(item => {
             let li = document.createElement("li");
-            li.textContent = `${item} - $${priceList[item].toFixed(2)}`;
+            li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
             cartItems.appendChild(li);
         });
-        
         document.getElementById("total-price").textContent = totalPrice.toFixed(2);
-        cartDiv.style.display = "block";
     }
-    
+
     function submitOrder() {
         alert("Order Submitted Successfully!");
         cart = [];
         totalPrice = 0;
         updateCart();
-        document.getElementById("cart").style.display = "none";
     }
 </script>
 </body>
 </html>
+
 
