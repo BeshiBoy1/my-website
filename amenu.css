@@ -4,20 +4,20 @@ body {
 
 
 .taskbar {
-    font-family: "Boldonse", system-ui;
-    color: green;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 20px;
-    padding-top: 40px;
-    margin-top: -50px;
-    margin-left: -20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex-grow: 1;
-    background-color: black; 
+  font-family: "Boldonse", system-ui;
+  color: green;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  padding-top: 40px;
+  margin-top: -50px;
+  margin-left: -20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  background-color: black; 
 }
 
 .text {
